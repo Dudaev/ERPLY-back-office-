@@ -8,7 +8,7 @@ const Input = () => {
   const [svgError, setSvgError] = useState(false)
   return (
     <div className={styles.container} >
-    <div >
+    <div>
       {svgX && <span className={styles.svgX} onClick={() => setInput('')}>
         <img src={ImageX} alt=""/>
       </span>}

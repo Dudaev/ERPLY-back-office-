@@ -1,0 +1,38 @@
+
+.searchWrapper{
+  display: flex;
+  width: 168px;
+  height: 44px;
+  position: relative;
+}
+
+.input{
+  width: 112px;
+  height: 40px;
+  border: 1px solid #EFF1F3;
+  padding-right: 14px;
+  padding-left: 40px;
+  outline:none;
+}
+.input::-webkit-input-placeholder {
+  color:#c6c6c6;
+  font-family: Qanelas;
+  font-style: normal;
+ }
+
+.input:hover{
+  border: 1px solid #8C8C8C;
+}
+
+.svgSearch{
+  position: absolute;
+  left: 12px;
+  top: calc(50% - 20px/2);
+  opacity: 0.5;
+}
+.svgX{
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 20px/2);
+  opacity: 0.5;
+}
