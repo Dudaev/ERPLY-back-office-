@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Qanelas';
+  src: local('Qanelas Regular'), local('Qanelas-Regular'),
+      url('./fonts/Qanelas-Regular.woff2') format('woff2'),
+      url('./fonts/Qanelas-Regular.woff') format('woff'),
+      url('./fonts/Qanelas-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.container > div {
+  width: 300px;
+  height: 44px;
+  display: flex;
+  margin: 10px;
+  position: relative;
+}
+
+.input{
+  width: 300px;
+  height: 42px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 14px;
+  padding-right: 14px;
+  color:rgba(50, 50, 50, 0.8);;
+  font-family: Qanelas;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid #EFF1F3;
+  outline:none;
+
+}
+.input::-webkit-input-placeholder {
+  color:#c6c6c6;
+  font-family: Qanelas;
+  font-style: normal;
+ }
+ .default::-webkit-input-placeholder {
+  color:#8C8C8C;
+  opacity: 0.5;
+ }
+
+.input:disabled{
+  border: 1px solid #DEE0E2;
+  opacity: 0.5;
+}
+.input:disabled::-webkit-input-placeholder {
+  color:rgba(50, 50, 50, 0.5);
+ }
+
+ .input:hover{
+  border: 1px solid #8C8C8C;
+ }
+ .input:hover::-webkit-input-placeholder {
+  color:#8C8C8C;
+  opacity: 1;
+ }
+
+ .input:focus{
+  color:#323232;
+  border: 1px solid #8C8C8C;
+
+ }
+ .input:focus::-webkit-input-placeholder {
+  color: #EFF1F3;
+  opacity: 0.8;
+ }
+
+ .svg{
+   position: absolute;
+   right: 12px;
+   top: calc(50% - 20px/2);
+ }
+
+ .error{
+  border: 1px solid #E53009;
+ }
+
+ .svgX{
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 20px/2);
+  cursor: pointer;
+ }
