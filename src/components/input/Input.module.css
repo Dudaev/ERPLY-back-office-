@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Qanelas';
   src: local('Qanelas Regular'), local('Qanelas-Regular'),
-      url('./fonts/Qanelas-Regular.woff2') format('woff2'),
-      url('./fonts/Qanelas-Regular.woff') format('woff'),
-      url('./fonts/Qanelas-Regular.ttf') format('truetype');
+      url('../../fonts/Qanelas-Regular.woff2') format('woff2'),
+      url('../../fonts/Qanelas-Regular.woff') format('woff'),
+      url('../../fonts/Qanelas-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }

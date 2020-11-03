@@ -1,0 +1,68 @@
+.blueButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 44px;
+  background-color: #0737A0;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Qanelas;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.blueButton:hover{
+  color: rgba(255, 255, 255, 0.2);
+}
+.greenButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 44px;
+  background-color: #00C53E;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+.greenButton:hover{
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #05D24B;
+}
+.greenButton:disabled{
+  background-color: #05D24B;
+}
+
+
+
+.whiteButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 118px;
+  height: 44px;
+  background-color: #C4C4C4;
+  color: #000000;
+  cursor: pointer;
+  border: 1px solid #C4C4C4;
+  font-family: Qanelas;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.whiteButton:hover{
+  color: rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+
+}
+.whiteButton:disabled{
+  background-color: #ffffff;
+
+}

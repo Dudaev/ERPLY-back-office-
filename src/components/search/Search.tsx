@@ -4,16 +4,25 @@ import imgSearch from './icons/Search.svg';
 import imgX from './icons/X.svg';
 const Input = () => {
   const [input, setInput] = useState('')
+  const [svgX, setSvgX] = useState(false)
   return (
     <div className={styles.container} >
         <div className={styles.searchWrapper}>
           <span className={styles.svgSearch}>
             <img src={imgSearch} alt=""/>
           </span>
-          <span className={styles.svgX}>
+          { svgX && <span className={styles.svgX} onClick={() => setInput('')} >
             <img src={imgX} alt=""/>
-          </span>
-          <input className={styles.input} type="text" placeholder='Search' value={input} onChange={(event) => setInput(event.currentTarget.value)}/>
+          </span>}
+
+          <input className={styles.input}
+                 type="text"
+                 placeholder='Search'
+                 value={input}
+                 onChange={(event) => setInput(event.currentTarget.value)}
+                 onFocus={() => setSvgX(true)}
+                 onBlur={() =>  setSvgX(false)}
+                  />
         </div>
     </div>
   )

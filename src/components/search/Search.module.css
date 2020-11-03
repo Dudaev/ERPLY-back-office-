@@ -9,15 +9,23 @@
 .input{
   width: 112px;
   height: 40px;
-  border: 1px solid #EFF1F3;
+  border: 1px solid rgba(239, 241, 243, 0.5);
   padding-right: 14px;
   padding-left: 40px;
   outline:none;
-}
-.input::-webkit-input-placeholder {
-  color:#c6c6c6;
   font-family: Qanelas;
   font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+.input::-webkit-input-placeholder {
+  font-family: Qanelas;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(140, 140, 140, 0.5);
  }
 
 .input:hover{
